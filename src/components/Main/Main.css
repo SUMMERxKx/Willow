@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #24a3a9; /* Primary teal color for text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Chatbot container */
+.chatbot-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #24a3a9, #ffffff); /* Teal to white gradient */
+  border: 1px solid #24a3a9; /* Teal border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header styling */
+.chatbot-header {
+  background-color: #24a3a9; /* Teal */
+  color: #ffffff; /* White text */
+  padding: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Chat window */
+.chat-window {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  border-top: 1px solid #24a3a9; /* Teal border */
+  border-bottom: 1px solid #24a3a9; /* Teal border */
+}
+
+/* Message styling */
+.user-message,
+.bot-message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user-message {
+  background-color: #24a3a9; /* Teal background */
+  color: #ffffff; /* White text */
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #e0f7f9; /* Light teal */
+  color: #24a3a9; /* Teal text */
+}
+
+/* Input area styling */
+.input-area {
+  display: flex;
+  border-top: 1px solid #24a3a9; /* Teal border */
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 1em;
+  outline: none;
+  background-color: #e0f7f9; /* Very light teal background */
+  color: #24a3a9; /* Teal text */
+}
+
+.input-area button {
+  background-color: #24a3a9; /* Teal */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-area button:hover {
+  background-color: #1e8b91; /* Darker teal on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .chatbot-container {
+      width: 95%;
+  }
+}
